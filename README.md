@@ -1,10 +1,10 @@
-Fraud Detection for Transaction Systems
+# Fraud Detection for Transaction Systems
 
-Overview:
+## Overview:
 This project demonstrates a fraud detection mechanism for transaction systems using machine learning algorithms. The objective is to classify transactions as either suspicious or legitimate to enhance financial security. The project is contained within a single Jupyter Notebook file, main.ipynb, which includes code for data preparation, model training, evaluation, and testing.
 
 
-Features:
+## Features:
   
     Data Preparation: Load and preprocess transaction data for model training.
     Model Building: Train and evaluate Decision Tree and Random Forest classifiers.
@@ -13,7 +13,7 @@ Features:
     Cross-Validation: Validate model performance with test data.
 
 
-Technologies Used:
+## Technologies Used:
  
     Python: Programming language for all the code and analysis. 
     Pandas: Library for data manipulation and analysis.
@@ -21,35 +21,35 @@ Technologies Used:
     Joblib: Library for saving and loading machine learning models.
     Jupyter Notebook: Interactive environment for developing and documenting code.
 
-Getting Started:
+## Getting Started:
 
-To get started with this project, follow these steps:
+### To get started with this project, follow these steps:
 
-  Clone the Repository:
+  #### Clone the Repository:
   
      git clone https://github.com/yourusername/fraud-detection-project.git
      cd fraud-detection-project
 
-Install Required Packages
+#### Install Required Packages
 
 Ensure you have Python 3.x installed. Then install the necessary packages using pip:
 
     pip install pandas scikit-learn joblib
 
-Add Your Data Files
+## Add Your Data Files
 
-Place your data files in the data directory:
+### Place your data files in the data directory:
 
     data/transactions.xlsx: Contains the transaction data used for model training.
     data/test_data.xlsx: Contains new transaction data for model testing.
 
-Open the Jupyter Notebook
+## Open the Jupyter Notebook
 
 Launch Jupyter Notebook and open main.ipynb:
 
     jupyter notebook main.ipynb
 
-Usage
+## Usage
 
 In the main.ipynb notebook, you will find the following sections:
 
@@ -62,23 +62,23 @@ In the main.ipynb notebook, you will find the following sections:
         Testing with New Data: Applying the models to new test data for fraud detection.
     Results: Evaluating model performance and displaying results.
 
-Algorithms and Models
+## Algorithms and Models
 
-Decision Tree Classifier:
+### Decision Tree Classifier:
 The Decision Tree model builds a tree-like model of decisions based on data features to classify transactions as suspicious or legitimate.
 
     from sklearn.tree import DecisionTreeClassifier
     dt_model = DecisionTreeClassifier()
     dt_model.fit(x_train, y_train)
 
-Random Forest Classifier:
+### Random Forest Classifier:
 The Random Forest model combines multiple decision trees to improve classification accuracy and robustness against overfitting.
 
     from sklearn.ensemble import RandomForestClassifier
     rf_model = RandomForestClassifier()
     rf_model.fit(x_train, y_train)
 
-Results:
+## Results:
 
 The notebook includes sections to display:
 
@@ -106,7 +106,7 @@ The notebook includes sections to display:
 
 
 
-Testing with New Data
+## Testing with New Data
 
 To test the models with new data:
 
@@ -121,12 +121,12 @@ Output Generated after testing:
     Suspicious detection using Random Forest Algorithm:
     array([1, 1, 1, 1, 1, 1, 1, 1, 1, 0])
 
-Future Improvements
+## Future Improvements
 
     Feature Engineering: Explore additional features to improve model performance.
     Hyperparameter Tuning: Optimize model parameters for better accuracy.
     Model Comparison: Evaluate other algorithms like XGBoost or Support Vector Machines.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
