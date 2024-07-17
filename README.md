@@ -3,19 +3,23 @@ Fraud Detection for Transaction Systems
 Overview:
 This project demonstrates a fraud detection mechanism for transaction systems using machine learning algorithms. The objective is to classify transactions as either suspicious or legitimate to enhance financial security. The project is contained within a single Jupyter Notebook file, main.ipynb, which includes code for data preparation, model training, evaluation, and testing.
 
+
 Features:
-  Data Preparation: Load and preprocess transaction data for model training.
-  Model Building: Train and evaluate Decision Tree and Random Forest classifiers.
-  Model Saving: Save trained models for future predictions.
-  Model Testing: Apply models to new data for fraud detection.
-  Cross-Validation: Validate model performance with test data.
+  
+    Data Preparation: Load and preprocess transaction data for model training.
+    Model Building: Train and evaluate Decision Tree and Random Forest classifiers.
+    Model Saving: Save trained models for future predictions.
+    Model Testing: Apply models to new data for fraud detection.
+    Cross-Validation: Validate model performance with test data.
+
 
 Technologies Used:
-  Python: Programming language for all the code and analysis.
-  Pandas: Library for data manipulation and analysis.
-  Scikit-Learn: Library for building machine learning models.
-  Joblib: Library for saving and loading machine learning models.
-  Jupyter Notebook: Interactive environment for developing and documenting code.
+ 
+    Python: Programming language for all the code and analysis. 
+    Pandas: Library for data manipulation and analysis.
+    Scikit-Learn: Library for building machine learning models.
+    Joblib: Library for saving and loading machine learning models.
+    Jupyter Notebook: Interactive environment for developing and documenting code.
 
 Getting Started:
 
@@ -59,29 +63,22 @@ In the main.ipynb notebook, you will find the following sections:
     Results: Evaluating model performance and displaying results.
 
 Algorithms and Models
-Decision Tree Classifier
 
+Decision Tree Classifier:
 The Decision Tree model builds a tree-like model of decisions based on data features to classify transactions as suspicious or legitimate.
 
-python
+    from sklearn.tree import DecisionTreeClassifier
+    dt_model = DecisionTreeClassifier()
+    dt_model.fit(x_train, y_train)
 
-from sklearn.tree import DecisionTreeClassifier
-
-dt_model = DecisionTreeClassifier()
-dt_model.fit(x_train, y_train)
-
-Random Forest Classifier
-
+Random Forest Classifier:
 The Random Forest model combines multiple decision trees to improve classification accuracy and robustness against overfitting.
 
-python
+    from sklearn.ensemble import RandomForestClassifier
+    rf_model = RandomForestClassifier()
+    rf_model.fit(x_train, y_train)
 
-from sklearn.ensemble import RandomForestClassifier
-
-rf_model = RandomForestClassifier()
-rf_model.fit(x_train, y_train)
-
-Results
+Results:
 
 The notebook includes sections to display:
 
